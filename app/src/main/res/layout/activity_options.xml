@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="edu.mst.nsh9b3.privacypreservingfaceauthentication.Options"
+    android:background="@android:color/darker_gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PPFA_Options_LinearLayout"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/PPFA_Options_ServerAmount"
+            android:textSize="30dp"
+            android:layout_weight="1"/>
+
+        <NumberPicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/PPFA_Options_NumberPicker"
+            android:layout_weight="1">
+        </NumberPicker>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PPFA_Options_LinearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/PPFA_Options_ClearSettings"
+        android:text="@string/PPFA_Options_Button_ClearSharedPrefs"
+        android:onClick="onClickClearSettings"/>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/PPFA_Options_ExpandableListView"
+        android:layout_below="@+id/PPFA_Options_ClearSettings"
+        android:descendantFocusability="afterDescendants">
+    </ExpandableListView>
+
+
+</RelativeLayout>

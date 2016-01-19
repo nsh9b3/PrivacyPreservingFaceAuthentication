@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PrivacyPreservingFaceAuthentication</string>
+
+    <!-- Main Activity -->
+    <string name="PPFA_Main_Button_Options">Options</string>
+    <string name="PPFA_Main_Button_TakePicture">Take</string>
+    <string name="PPFA_Main_Button_Authenticate">Authenticate</string>
+
+    <!-- Options Activity -->
+    <string name="PPFA_Options_ServerAmount">Number of Servers</string>
+    <string name="PPFA_Options_Button_ClearSharedPrefs">Clear Settings</string>
+
+    <string name="PPFA_Options_FTPServerInformation">FTP Server Information</string>
+
+    <string name="PPFA_Options_FTPAddress">FTP Address</string>
+    <string name="PPFA_Options_FTPPort">FTP Port</string>
+    <string name="PPFA_Options_FTPUsername">FTP Username</string>
+    <string name="PPFA_Options_FTPPassword">FTP Password</string>
+
+    <string name="PPFA_Options_SaveServerInfo">Save Settings</string>
+
+    <!-- Shared Preferences -->
+    <string name="PPFA_SharedPref_NumServers">Server Number</string>
+    <string-array name="PPFA_SharedPref_Servers">
+        <item>Server 1</item>
+        <item>Server 2</item>
+        <item>Server 3</item>
+        <item>Server 4</item>
+        <item>Server 5</item>
+        <item>Server 6</item>
+        <item>Server 7</item>
+        <item>Server 8</item>
+        <item>Server 9</item>
+        <item>Server 10</item>
+    </string-array>
+    <string-array name="PPFA_SharedPref_ServerInfo">
+        <item> IpAddress</item>
+        <item> IpPort</item>
+        <item> Username</item>
+        <item> Password</item>
+    </string-array>
+</resources>

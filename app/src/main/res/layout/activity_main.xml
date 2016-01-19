@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.mst.nsh9b3.privacypreservingfaceauthentication.MainActivity"
+    android:background="@color/background_material_dark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/PPFA_Main_LinearLayout"
+        android:id="@+id/PPFA_Main_ImageView_Face"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PPFA_Main_LinearLayout"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/PPFA_Main_Button_Options"
+            android:text="@string/PPFA_Main_Button_Options"
+            android:drawableRight="@android:drawable/ic_dialog_alert"
+            android:drawableEnd="@android:drawable/ic_dialog_alert"
+            android:layout_weight="1"
+            android:onClick="onClickOptions"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/PPFA_Main_Button_TakePicture"
+            android:text="@string/PPFA_Main_Button_TakePicture"
+            android:drawableRight="@android:drawable/ic_menu_camera"
+            android:drawableEnd="@android:drawable/ic_menu_camera"
+            android:layout_weight="1"
+            android:onClick="onClickTakePicture"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/PPFA_Main_Button_Authenticate"
+            android:text="@string/PPFA_Main_Button_Authenticate"
+            android:drawableRight="@android:drawable/ic_secure"
+            android:drawableEnd="@android:drawable/ic_secure"
+            android:layout_weight="1"
+            android:onClick="onClickAuthenticate"/>
+    </LinearLayout>
+</RelativeLayout>
